@@ -4,32 +4,53 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<meta property="og:type" />
-		<meta property="og:site_name" />
-		<meta property="og:title" />
-		<meta property="og:description" />
-		<meta property="og:image" />
+		<!-- bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+		<!--web font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+        
+        <!--favicon-->
+        <link rel="icon" href="./images/favicon.png" />
+
+        <!-- opengraph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="hyungjunyoo" />
+        <meta property="og:title" content="hyungjunyoo" />
+        <meta property="og:description" content="안녕하세요, ML/AI Researcher로 일하고 있는 유형준 입니다." />
+        <meta property="og:image" content="https://img.freepik.com/premium-photo/studio-background-gradient-blue_1258-49130.jpg" />
+        <meta property="og:url" content="https://hj-yoo.github.io/html_css_practice/" />
 
 		<title></title>
 
-		<link rel="stylesheet" />
-
-		<link rel="icon" />
+		<link rel="stylesheet"  href="./css/style.css" />
 	</head>
+
 	<body>
-		<div class="container">
-			<header class="bootstrap-header lh-1 py-3">
+		<a id="tag1"></a>
+		<div class="sticky-top text-bg-light container">
+			<header class=" bootstrap-header lh-1 py-3">
 				<div class="row flex-nowrap justify-content-between align-items-center">
-					<h1 class="text-left">
-						<a class="bootstrap-header-logo text-dark" href="#"
-							>안녕하세요. 반갑습니다</a
-						>👋
-					</h1>
+					<nav class="text-bg-light p-2 navbar navbar-expand-md bg-body-tertiary">
+						<div class="navbar-nav">
+							<a class="navbar-brand" style="font-size: 35px;" aria-current="page" href="#">Hello</a>
+							<a class="nav-link" style="font-size: 30px;" href="#tag2">경력</a>
+							<a class="nav-link" style="font-size: 30px;" href="#tag3">교육</a>
+							<a class="nav-link" style="font-size: 30px;" href="#tag4">취미</a>
+						</div>
+					</nav>
 				</div>
 			</header>
 		</div>
 
-		<main class="container">
+		<main class="container" >
 			<div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
 				<div class="col-md-6 px-0">
 					<h1 class="display-7">
@@ -41,47 +62,146 @@
 				</div>
 			</div>
 
-			<div class="row mb-2">
-				<div class="col-md-4">
-					<div
-						class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative"
-					>
-						<div class="col p-4 d-flex flex-column position-static">
-							<h3 class="mb-0">경력</h3>
-							<a class="stretched-link">자세히 보기</a>
+			<div class="container-1">
+				<div class="row-mb-2">
+					<div class="col-md-4">
+						<div
+							class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-50 position-relative"
+						>
+							<div class="col p-4 d-flex flex-column position-static">
+								<h3 class="mb-0">경력</h3>
+								<a href="#tag2" class="stretched-link">자세히 보기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-mb-2">
+					<div class="col-md-4">
+						<div
+							class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-50 position-relative"
+						>
+							<div class="col p-4 d-flex flex-column position-static">
+								<h3 class="mb-0">교육</h3>
+								<a href="#tag3" class="stretched-link">자세히 보기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-mb-2">
+					<div class="col-md-4">
+						<div
+							class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-50 position-relative"
+						>
+							<div class="col p-4 d-flex flex-column position-static">
+								<h3 class="mb-0">취미</h3>
+								<a href="#tag4" class="stretched-link">자세히 보기</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 
+			
 			<div class="row g-5">
 				<div class="col-md-8">
+					<a id="tag2"></a>
 					<article id="experience" class="bootstrap-post">
-						<h2 class="bootstrap-post-title mb-1">🧳 경력</h2>
+						<h2 class="bootstrap-post-title mb-1">🧳 Industrial Experience</h2>
+						<hr>
+						<br>
+						
+						<h3 style="background-color: rgb(229, 229, 229); width:fit-content">Applied Data Scientist</h3>
+							<p>Samsung Electrocs / Feb 2021 - Present · 2 yrs 1 mo</p>
+							<p>[ Improving Efficiency of Semiconductor Production System Operation using ML/AI]</p>
+							<ul>
+								<li>(using custom network) Validation Automation of SQL</li>
+								<li>(using custom network) AI model for Efficient Selecting Lot to measure</li>
+								<li>(using LLM, NLP) Abstractive Summarization of Confluence data</li>
+								<li>(using LLM, NLP) Automatic QA pipeline using S-VOC history</li>
+							</ul>
+						<h3 style="background-color: rgb(229, 229, 229); width:fit-content">Instructor</h3>
+							<p>Elice / Dec 2021 - Present · 1 yr 3 mos</p>
+							<p>[ Project-based Corporate lectures ]</p>
+							<ul>
+								<li>Hyundai Motor : Customer repurchase prediction project using user and vehicle data (35H)</li>
+								<li>LG Innotek : Analysis of structured and unstructured data (40H)</li>
+								<li>Samsung Electronics : Making materials(slides and codes about ML & DX) for executives training (4W)</li>
+							</ul>
+						<h3 style="background-color: rgb(229, 229, 229); width:fit-content">AI Researcher</h3>
+							<p>KT / May 2020 - Sep 2020 · 5 mos</p>
+							<p>[ Infectious Disease (COVID-19) Spread Prediction Modeling ]</p>
+							<p>Forecasting and modeling of areas at risk of spread through trajectory data of Covid-19 confirmed cases and floating population data based on KT mobile communication base station</p>
+							<ul>
+								<li>Reorganize mobility of floating population data into a graph structure and use it as visualizations and predictive data.</li>
+								<li>Develops a model combining Graph-Convolution Network and LSTM and proceeds with risk prediction by administrative district.</li>
+							</ul>
+						<h3 style="background-color: rgb(229, 229, 229); width:fit-content">Instructor</h3>
+						<p>Fast Campus / May 2020 - Jul 2020 · 3 mos</p>
+							<ul>
+								<li>Lectures on Basic Statistics for Non-major student and 
+									Office workers(30H, online)</li>
+							</ul>
+						<h3 style="background-color: rgb(229, 229, 229); width:fit-content">Data Scientist</h3>
+						<p>Shinhan Bank / Jan 2019 - Feb 2019 · 2 mos</p>
+							<p>[ Financial Life Index Development Using Customer Data ]</p>
+							<p>After winning the grand prize(2nd) in the Innovation, financial section of 2018 Big Contest, selected award team members carried out a project to upgrade additional algorithms in the development of the financial life index (Big-Data Center).</p>
+							<ul>
+								<li>Estimation and Clustering of missing values on customer financial information based on customer similarity</li>
+							</ul>
 					</article>
+					<br>
+					<br>
+					
+					<a id="tag3"></a>
+					<article id="education" class="bootstrap-post">
+						<h2 class="bootstrap-post-title mb-1">👨‍🎓 Education</h2>
+						<hr>
+						<br>
+						<h3> KAIST </h3>
+						<p>Master's degree, Industrial & System Engineering (Department of Data Science)</p>
+						<p>Adviser : Seyoung Yun (<a
+							href="http://osi.kaist.ac.kr/"
+							target="_blank"
+							>OSI Lab, Graduate School of AI</a
+						>, KAIST)</p>
+						<br>
+						<h3>Sungkyunkwan University</h3>
+						<p>Bachelor's degree, Statistics</p>
+						<p>Activities and societies: Study of statistical analysis (P-SAT)</p>
+					</article>
+					<br>
+					<br>
 
+					
+					<a id="tag4"></a>
 					<article id="hobby" class="bootstrap-post">
-						<h2 class="bootstrap-post-title mb-1">🧗🏻‍♀️ 취미</h2>
+						<h2 class="bootstrap-post-title mb-1">🧗🏻‍♀️ Hobby</h2>
+						<hr>
+						<br>
+						<h3>Surfing🏄‍♂️</h3>
+						<br>
+						<h3>Whisky🍾</h3>
 					</article>
+					<br>
+					<br>
 
 					<article id="etc" class="bootstrap-post">
-						<h2 class="bootstrap-post-title mb-1">😀 기타</h2>
-						<h3>아직 더 표현하고 싶은게 있으신가요?</h3>
-						<p>아직도<mark>다양한 태그</mark>들이 남았답니다.</p>
-						<p>
-							<a
-								href="https://developer.mozilla.org/ko/docs/Web/HTML/Element"
-								target="_blank"
-								>여기에서</a
-							>
-							더 다양한 태그들을 확인해보시고 간단하게 사용해보세요
-						</p>
-						<p>
-							이미 만들어진 간단한 부트스트랩 스타일을 사용하고 싶다면?
-							<a href="https://getbootstrap.com" target="_blank">
-								부스트스트랩 문서를 참고해보세요
-							</a>
-						</p>
+						<h2 class="bootstrap-post-title mb-1">😀 Others</h2>
+						<hr>
+						<br>
+						<h3>Prizes</h3>
+						<ul><li>KAIST AI 21/22 Workshop, Best Poster Awards</li></ul> 
+						<p>BOIL: Towards Representaion Change for Few-shot Learning</p>
+						
+						<br>
+
+						<h3>Selected Talks</h3>
+						<ul><li> "Representation Learning and Adaptability" @ Kakao Enterprise <a href="https://drive.google.com/file/d/11TefIjvyME2Wjrg0kRl0S7e1d8W7TGOH/view">[PDF]</a></li></ul>
+						
+						
+
+
 					</article>
 				</div>
 
@@ -89,10 +209,21 @@
 					<div class="position-sticky" style="top: 2rem">
 						<div class="p-4 mb-3 bg-light rounded">
 							<h4>About</h4>
+							<p><b>안녕하세요, 유형준 입니다.</b><br>
+								노력을 통해 성장하는 경험을 즐깁니다. <br>
+								다양한 분야에 ML/AI를 적용하는 업무를 경험하고 있습니다. <br>
+								계속 발전하는 연구자가 되고 싶습니다.
+							</p>
 						</div>
 
 						<div class="p-4">
 							<h4>Social</h4>
+							<p><a href="https://www.linkedin.com/in/hyungjun-yoo-6a2906145/"
+								target="_blank">LinkedIn</a></p>
+							<p><a href="mailto:yooghjun@gmail.com">메일 보내기</a></p>
+							<p><a href="tel:010-4903-0931">전화걸기</a></p>
+										
+							
 						</div>
 					</div>
 				</div>
@@ -105,7 +236,7 @@
 				<a href="https://getbootstrap.com/">Bootstrap</a>
 			</p>
 			<p>
-				<a href="#">Back to top</a>
+				<a href="#tag1">Back to top</a>
 			</p>
 		</footer>
 	</body>
